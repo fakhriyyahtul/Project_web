@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RS Mabarot</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+<body class="font-sans scroll-smooth">
+
+  <!-- Top Info Bar -->
+  <div class="bg-green-600 text-white text-sm py-2">
+    <div class="container mx-auto flex justify-between items-center px-6">
+      <div></div>
+      <span class="flex items-center space-x-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        </svg>
+      </span>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="bg-white shadow">
+    <div class="container mx-auto flex justify-between items-center px-6 py-4">
+      <div class="flex items-center space-x-3">
+        <img src="img/logo.png" alt="Logo RS Mabarot" class="h-10 w-auto" />
+      </div>
+      <nav class="flex items-center space-x-6 text-gray-800">
+        <a href="#beranda" class="hover:text-green-600 font-medium">HOME</a>
+        <a href="#tentang" class="hover:text-green-600 font-medium">TENTANG KAMI</a>
+        <a href="#jadwal" class="hover:text-green-600 font-medium">JADWAL POLI</a>
+        <a href="#dokter" class="hover:text-green-600 font-medium">DOKTER</a>
+        <a href="#kontak" class="hover:text-green-600 font-medium">HUBUNGI KAMI</a>
+        </nav>
+    </div>
+  </header>
+
+  <!-- Hero Slider -->
+  <section id="beranda" class="pt-20 relative">
+    <div class="swiper mySwiper h-[80vh] relative">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide relative">
+          <img src="img/hero1.jpg" class="w-full h-full object-cover" />
+          <div class="absolute inset-0 bg-gradient-to-br from-green-600/60 to-yellow-300/60 flex flex-col items-center justify-center text-white text-center">
+            <h2 class="text-4xl font-bold drop-shadow-lg">Selamat Datang di RS Mabarot</h2>
+            <p class="mt-4 text-lg drop-shadow-md">Pelayanan Islami dan Profesional</p>
+          </div>
+        </div>
+        <div class="swiper-slide relative">
+          <img src="img/hero2.jpg" class="w-full h-full object-cover" />
+          <div class="absolute inset-0 bg-gradient-to-br from-green-600/60 to-yellow-300/60 flex flex-col items-center justify-center text-white text-center">
+            <h2 class="text-4xl font-bold drop-shadow-lg">IGD 24 Jam</h2>
+            <p class="mt-4 text-lg drop-shadow-md">Siap melayani keadaan darurat kapan saja</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </section>
+
+  <!-- Layanan -->
+<section id="layanan" class="py-20 bg-white">
+  <div class="container mx-auto text-center fade-in">
+    <h3 class="text-3xl font-semibold text-green-700 mb-10">Layanan Unggulan</h3>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="p-6 border rounded shadow hover:shadow-lg">
+        <h4 class="font-bold text-green-600 mb-2">Rawat Inap</h4>
+        <p>Pelayanan rawat inap yang nyaman dan aman.</p>
+      </div>
+      <div class="p-6 border rounded shadow hover:shadow-lg">
+        <h4 class="font-bold text-green-600 mb-2">IGD 24 Jam</h4>
+        <p>Siap sedia 24/7 untuk keadaan darurat.</p>
+      </div>
+      <div class="p-6 border rounded shadow hover:shadow-lg">
+        <h4 class="font-bold text-green-600 mb-2">Poli Spesialis</h4>
+        <p>Layanan spesialis anak, kandungan, gigi, dll.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Tentang -->
+<section id="tentang" class="py-20 bg-green-50 fade-in">
+  <div class="container mx-auto text-center">
+    <h3 class="text-3xl font-semibold text-green-700 mb-4">Tentang RS Mabarot</h3>
+    <p class="max-w-2xl mx-auto text-gray-700">
+      RS Mabarot adalah rumah sakit Islami yang mengutamakan pelayanan kesehatan berkualitas dan penuh empati kepada seluruh masyarakat.
+    </p>
+  </div>
+</section>
+
+<!-- Dokter -->
+<section id="dokter" class="py-20 bg-white fade-in">
+  <div class="container mx-auto text-center">
+    <h3 class="text-3xl font-semibold text-green-700 mb-10">Dokter Kami</h3>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-gray-100 p-6 rounded shadow">
+        <img src="img/dokter1.jpg" class="rounded-full mx-auto mb-4" />
+        <h4 class="font-bold text-green-700">dr. Anisa Rahma</h4>
+        <p>Spesialis Anak</p>
+      </div>
+      <div class="bg-gray-100 p-6 rounded shadow">
+        <img src="img/dokter2.jpg" class="rounded-full mx-auto mb-4" />
+        <h4 class="font-bold text-green-700">dr. Hasan Malik</h4>
+        <p>Spesialis Bedah</p>
+      </div>
+      <div class="bg-gray-100 p-6 rounded shadow">
+        <img src="img/dokter3.jpg" class="rounded-full mx-auto mb-4" />
+        <h4 class="font-bold text-green-700">dr. Lestari Dewi</h4>
+        <p>Spesialis Kandungan</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Jadwal Poli -->
+<section id="jadwal" class="py-20 bg-white fade-in">
+  <div class="container mx-auto text-center">
+    <h3 class="text-3xl font-semibold text-green-700 mb-6">Jadwal Poli</h3>
+    <div class="overflow-x-auto">
+      <table class="mx-auto table-auto border border-gray-300 w-full md:w-2/3 text-left">
+        <thead>
+          <tr class="bg-green-600 text-white">
+            <th class="px-4 py-2">Poli</th>
+            <th class="px-4 py-2">Hari</th>
+            <th class="px-4 py-2">Jam</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b">
+            <td class="px-4 py-2">Poli Anak</td>
+            <td class="px-4 py-2">Senin - Rabu</td>
+            <td class="px-4 py-2">08.00 - 12.00</td>
+          </tr>
+          <tr class="border-b">
+            <td class="px-4 py-2">Poli Gigi</td>
+            <td class="px-4 py-2">Kamis - Jumat</td>
+            <td class="px-4 py-2">09.00 - 13.00</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-2">Poli Kandungan</td>
+            <td class="px-4 py-2">Sabtu</td>
+            <td class="px-4 py-2">10.00 - 14.00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- Kontak -->
+<section id="kontak" class="py-20 bg-white fade-in">
+  <div class="container mx-auto text-center">
+    <h3 class="text-3xl font-semibold text-green-700 mb-6">Kontak Kami</h3>
+    <p class="text-gray-700">Jl. Raya Bungah Dukun No.1D, Sukowati, Masangan, Kec. Bungah, Kabupaten Gresik</p>
+    <p class="text-gray-700">Telepon: (031) 1234567</p>
+    <p class="text-gray-700">Email: info@rsmabarot.or.id</p>
+    <div class="mt-8">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.148024955089!2d112.6550138!3d-7.221959699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd800fd26ce0737%3A0x2996cc7c99bdf3db!2sRS%20Mabarot!5e0!3m2!1sid!2sid!4v1716271337000!5m2!1sid!2sid" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-green-700 text-white text-center p-6">
+  <p>&copy; 2025 RS Mabarot. All rights reserved.</p>
+</footer>
+
+<!-- WhatsApp Button -->
+<a href="https://wa.me/6281234567890" target="_blank" class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg text-xl z-50">💬</a>
+
+<!-- SwiperJS Script -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      autoplay: { delay: 4000 },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
